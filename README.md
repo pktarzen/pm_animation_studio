@@ -73,7 +73,7 @@ I'm building free Blender tools and AI-powered utilities to help artists, studen
 
 ## Contact
 
-GitHub: https://github.com/YOUR_USERNAME
+GitHub: https://github.com/pktarzen
 
 ---
 
