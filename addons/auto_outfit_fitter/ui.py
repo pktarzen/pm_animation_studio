@@ -1,6 +1,5 @@
-# PM Auto Outfit Fitter UI
-
 import bpy
+
 
 class PMOF_PT_Panel(bpy.types.Panel):
     bl_label = "Outfit Fitter"
@@ -10,5 +9,21 @@ class PMOF_PT_Panel(bpy.types.Panel):
     bl_category = 'PM Tools'
 
     def draw(self, context):
+
         layout = self.layout
-        layout.label(text="PM Auto Outfit Fitter")
+
+        layout.label(text="Body Analysis")
+
+        layout.operator(
+            "pmof.analyze_body",
+            icon='MESH_CUBE'
+        )
+
+        layout.separator()
+
+        layout.label(text="Clothing Tools")
+
+        layout.operator(
+            "pmof.fit_clothes",
+            icon='MOD_CLOTH'
+        )
