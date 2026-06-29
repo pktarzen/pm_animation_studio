@@ -1,4 +1,5 @@
 import bpy
+from mathutils import Vector
 
 
 # --------------------------------------------------
@@ -7,7 +8,7 @@ import bpy
 
 def analyze_body(obj):
 
-    bbox = [obj.matrix_world @ v[:] for v in obj.bound_box]
+    bbox = [obj.matrix_world @ Vector(v) for v in obj.bound_box]
 
     xs = [v[0] for v in bbox]
     ys = [v[1] for v in bbox]
